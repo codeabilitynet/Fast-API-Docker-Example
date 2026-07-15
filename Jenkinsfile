@@ -4,7 +4,7 @@ pipeline {
    stages {
        stage('Clone') {
            steps {
-               git 'https://github.com/rhumbert1/Fast-API-Docker-Example.git'
+               git branch: "main", url: "https://github.com/rhumbert1/Fast-API-Docker-Example.git"
            }
        }
 
